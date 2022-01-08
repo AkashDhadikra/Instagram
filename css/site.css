@@ -6,6 +6,33 @@ body, button, input, textarea {
     line-height: 18px;
 }
 
+button {
+    cursor: pointer;
+}
+
+.igcMaskDiv {
+    background: #000;
+    opacity: 0.3;
+}
+
+.igcMaskDiv,
+.igcMaskContentDiv {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.igcMaskContentDiv > div {
+    color: #fff;
+    text-align: center;
+    background: #529f9f;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 .igc_mainDiv {
     display: flex;
     align-items: center;
@@ -76,7 +103,6 @@ body, button, input, textarea {
     background-color: #0095f6;
     border: 1px solid #0095f6;
     border-radius: 3px;
-    cursor: pointer;
 }
 
 .igc_Btn:disabled {
@@ -113,6 +139,7 @@ body, button, input, textarea {
 
 .igcAlert.success {
     color: #068706;
+    font-size: 16px;
 }
 
 .igcMobileNoMainDiv,
